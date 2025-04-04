@@ -29,7 +29,7 @@ export default function Summary() {
             From a young age, I’ve been captivated by the process of discovering how systems, software, and 
             algorithms come together and how we can use them to do as we please.
             <br/>
-            It's not just about learning to code, it's about unraveling and mastering the logic behind the 
+            It&apos;s not just about learning to code, it&apos;s about unraveling and mastering the logic behind the 
             tools we use every day and how they shape our world.
             <br/>
             This curiosity fuels my desire to not only keep learning but also to bring my growing skills and 

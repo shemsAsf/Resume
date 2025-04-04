@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "@/components/Header";
 import Summary from "@/components/Summary";
 import Skills from "@/components/Skills";
