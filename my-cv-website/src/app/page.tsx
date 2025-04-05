@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-200 text-gray-900 font-sans">
       <Header />
 
-      <main className="max-w-5xl mx-auto px-6 py-10">
+      <main className="max-w-5xl mx-auto px-8 py-6 sm:px-6 sm:py-10">
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

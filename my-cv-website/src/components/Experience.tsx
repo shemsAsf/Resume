@@ -6,7 +6,7 @@ export default function Experience() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.4 }}
-      className="my-10 text-center sm:text-left py-10"
+      className="my-10 text-justify py-10"
     >
       <h2 className="text-6xl font-semibold text-gray-800">Professional Experience</h2>
 
@@ -16,7 +16,7 @@ export default function Experience() {
           <li className="mb-10 ml-6">
           <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-600 rounded-full -left-3 ring-8 ring-indigo-600"></span>
             <div className="pl-10">
-              <h3 className="text-3xl font-semibold text-indigo-600">IVALUA - MONTPELLIER</h3>
+              <h3 className="text-3xl text-left font-semibold text-indigo-600">IVALUA - MONTPELLIER</h3>
               <p className="italic text-lg text-gray-500">Apprenticeship | 2023 (2 years)</p>
               <p className="mt-4 text-gray-700">
                 Ivalua is a global procurement and spend management software company, offering solutions to manage suppliers, sourcing, procurement, and payments. The company serves prestigious clients in various industries, providing them with advanced tools to optimize their operations.
@@ -34,7 +34,7 @@ export default function Experience() {
           <li className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-600 rounded-full -left-3 ring-8 ring-teal-600"></span>
             <div className="pl-10">
-              <h3 className="text-3xl font-semibold text-teal-600">DEGRIFF PC - SAINT GELY DU FESC</h3>
+              <h3 className="text-3xl font-semibold text-left text-teal-600">DEGRIFF PC - SAINT GELY DU FESC</h3>
               <p className="italic text-lg text-gray-500">Internship | 2021 (1 month)</p>
               <p className="mt-4 text-gray-700">
                 Degriff PC is a local hardware store known for its personalized service and repair expertise. In addition to selling computer hardware and accessories, the company operates a workshop where they offer repair services for various IT devices, including desktops, laptops, and other peripherals.
