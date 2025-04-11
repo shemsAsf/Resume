@@ -6,15 +6,15 @@ export default function Experience() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.4 }}
-      className="my-10 text-justify py-10"
+      className="my-10 text-left py-10"
     >
       <h2 className="text-6xl font-semibold text-gray-800">Professional Experience</h2>
 
       <div className="relative max-w-6xl mx-auto mt-6">
         <ol className="border-l border-gray-700">
           {/* Experience 1 */}
-          <li className="mb-10 ml-6">
-          <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-600 rounded-full -left-3 ring-8 ring-indigo-600"></span>
+          <li className="mb-10 ml-6 relative">
+          <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-600 rounded-full -left-9 top-2 ring-8 ring-indigo-600"></span>
             <div className="pl-10">
               <h3 className="text-3xl text-left font-semibold text-indigo-600">IVALUA - MONTPELLIER</h3>
               <p className="italic text-lg text-gray-500">Apprenticeship | 2023 (2 years)</p>
@@ -31,8 +31,8 @@ export default function Experience() {
           </li>
 
           {/* Experience 2 */}
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-600 rounded-full -left-3 ring-8 ring-teal-600"></span>
+          <li className="mb-10 ml-6 relative">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-600 rounded-full -left-9 top-2 ring-8 ring-teal-600"></span>
             <div className="pl-10">
               <h3 className="text-3xl font-semibold text-left text-teal-600">DEGRIFF PC - SAINT GELY DU FESC</h3>
               <p className="italic text-lg text-gray-500">Internship | 2021 (1 month)</p>

@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Hobbies from "@/components/Hobbies";
 
 export default function Home() {
   return (
@@ -20,6 +21,14 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <Summary />
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Hobbies />
         </motion.section>
 
         <motion.section

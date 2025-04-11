@@ -6,7 +6,7 @@ export default function Summary() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="my-10 text-justify py-10"
+      className="my-10 text-left py-10"
     >
       <div className="flex flex-col sm:flex-row items-center justify-center mt-6 max-w-6xl mx-auto">
         {/* Image Section */}
