@@ -15,7 +15,7 @@ export default function Summary() {
         <img
           src="/MyPicture.jpg"
           alt="Your Photo"
-          className="w-60 h-auto object-cover shadow-lg sm:mr-6 mb-6 sm:mb-0"
+          className="w-60 h-60 object-cover shadow-lg sm:mr-6 mb-6 sm:mb-0"
         />
 
         {/* Text Section */}

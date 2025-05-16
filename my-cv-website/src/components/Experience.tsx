@@ -16,7 +16,7 @@ export default function Experience() {
         <ol className="border-l border-gray-700">
           {/* Experience 1 */}
           <li className="mb-10 ml-6 relative">
-          <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-600 rounded-full -left-9 top-2 ring-8 ring-indigo-600"></span>
+          <span className="absolute flex items-center justify-center w-10 h-10 bg-indigo-600 rounded-full -left-11 top-0"></span>
             <div className="pl-10">
               <h3 className="text-3xl text-left font-semibold text-indigo-600">IVALUA - MONTPELLIER</h3>
               <p className="italic text-lg text-gray-500">Apprenticeship | 2023 (2 years)</p>
@@ -34,7 +34,7 @@ export default function Experience() {
 
           {/* Experience 2 */}
           <li className="mb-10 ml-6 relative">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-600 rounded-full -left-9 top-2 ring-8 ring-teal-600"></span>
+            <span className="absolute flex items-center justify-center w-10 h-10 bg-teal-600 rounded-full -left-11 top-0"></span>
             <div className="pl-10">
               <h3 className="text-3xl font-semibold text-left text-teal-600">DEGRIFF PC - SAINT GELY DU FESC</h3>
               <p className="italic text-lg text-gray-500">Internship | 2021 (1 month)</p>

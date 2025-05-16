@@ -6,6 +6,7 @@ import Summary from "@/components/Summary";
 import Skills from "@/components/Skills";
 import RemoteExperience from "@/components/RemoteExperience";
 import Experience from "@/components/Experience";
+import School from "@/components/School";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Hobbies from "@/components/Hobbies";
@@ -22,13 +23,21 @@ export default function Home() {
     <div className="min-h-screen bg-gray-200 text-gray-900 font-sans">
       <Header />
 
-      <main className="max-w-5xl mx-auto px-8 py-6 sm:px-6 sm:py-10 space-y-16">
+      <main className="max-w-5xl mx-auto px-8 py-6 sm:px-6 sm:py-10 space-y-8">
         <motion.section {...sectionAnimation}>
           <Summary />
         </motion.section>
 
         <motion.section {...sectionAnimation}>
-          <Hobbies />
+          <Experience />
+        </motion.section>
+
+        <motion.section {...sectionAnimation}>
+          <School />
+        </motion.section>
+
+        <motion.section {...sectionAnimation}>
+          <Projects />
         </motion.section>
 
         <motion.section {...sectionAnimation}>
@@ -40,11 +49,7 @@ export default function Home() {
         </motion.section>
 
         <motion.section {...sectionAnimation}>
-          <Experience />
-        </motion.section>
-
-        <motion.section {...sectionAnimation}>
-          <Projects />
+          <Hobbies />
         </motion.section>
       </main>
 
