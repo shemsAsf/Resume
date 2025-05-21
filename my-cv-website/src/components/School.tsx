@@ -21,7 +21,7 @@ export default function School() {
                             <h3 className="text-3xl text-left font-semibold text-indigo-600">CMI - Montpellier Science University</h3>
                             <p className="italic text-lg text-gray-500">Bachelor&apos;s Degree | 2020 - 2023</p>
                             <p className="mt-4 text-gray-700">
-                                The &quot;Cursus Master en Ingénierie&quot; (CMI) is a demanding five-year engineering track integrated into the university, offering both theoretical and practical training. I completed the first three years of this program at Montpellier Science University, earning a Bachelor's degree (&quot;Licence&quot;).
+                                The &quot;Cursus Master en Ingénierie&quot; (CMI) is a demanding five-year engineering track integrated into the university, offering both theoretical and practical training. I completed the first three years of this program at Montpellier Science University, earning a Bachelor&apos;s degree (&quot;Licence&quot;).
                             </p>
                             <p className="mt-4 text-gray-700">
                                 Throughout these years, I gained a strong foundation in computer science, mathematics, and software engineering. The program emphasized both academic excellence and hands-on experience through lab work and projects, preparing me for advanced studies and real-world technical challenges.
@@ -37,7 +37,7 @@ export default function School() {
                             <h3 className="text-3xl font-semibold text-left text-teal-600">EPSI - Montpellier</h3>
                             <p className="italic text-lg text-gray-500">Master&apos;s Degree | 2023 - 2025</p>
                             <p className="mt-4 text-gray-700">
-                                EPSI is a renowned school for IT and software engineering, offering specialized and practical training aligned with industry needs. I joined EPSI in 2023 to pursue a Master's degree in computer science.
+                                EPSI is a renowned school for IT and software engineering, offering specialized and practical training aligned with industry needs. I joined EPSI in 2023 to pursue a Master&apos;s degree in computer science.
                             </p>
                             <p className="mt-4 text-gray-700">
                                 This program is structured around project-based learning, professional development, and deep technical training in areas like software architecture, DevOps, and  data engineering. It has significantly enhanced my expertise and prepared me for complex engineering roles.
