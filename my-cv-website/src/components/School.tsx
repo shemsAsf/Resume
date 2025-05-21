@@ -19,9 +19,9 @@ export default function School() {
                     <span className="absolute flex items-center justify-center w-10 h-10 bg-indigo-600 rounded-full -left-11 top-0"></span>
                         <div className="pl-10">
                             <h3 className="text-3xl text-left font-semibold text-indigo-600">CMI - Montpellier Science University</h3>
-                            <p className="italic text-lg text-gray-500">Bachelor’s Degree | 2020 - 2023</p>
+                            <p className="italic text-lg text-gray-500">Bachelor&apos;s Degree | 2020 - 2023</p>
                             <p className="mt-4 text-gray-700">
-                                The "Cursus Master en Ingénierie" (CMI) is a demanding five-year engineering track integrated into the university, offering both theoretical and practical training. I completed the first three years of this program at Montpellier Science University, earning a Bachelor's degree ("Licence").
+                                The &quot;Cursus Master en Ingénierie&quot; (CMI) is a demanding five-year engineering track integrated into the university, offering both theoretical and practical training. I completed the first three years of this program at Montpellier Science University, earning a Bachelor's degree (&quot;Licence&quot;).
                             </p>
                             <p className="mt-4 text-gray-700">
                                 Throughout these years, I gained a strong foundation in computer science, mathematics, and software engineering. The program emphasized both academic excellence and hands-on experience through lab work and projects, preparing me for advanced studies and real-world technical challenges.
@@ -35,7 +35,7 @@ export default function School() {
 
                         <div className="pl-10">
                             <h3 className="text-3xl font-semibold text-left text-teal-600">EPSI - Montpellier</h3>
-                            <p className="italic text-lg text-gray-500">Master’s Degree | 2023 - 2025</p>
+                            <p className="italic text-lg text-gray-500">Master&apos;s Degree | 2023 - 2025</p>
                             <p className="mt-4 text-gray-700">
                                 EPSI is a renowned school for IT and software engineering, offering specialized and practical training aligned with industry needs. I joined EPSI in 2023 to pursue a Master's degree in computer science.
                             </p>
