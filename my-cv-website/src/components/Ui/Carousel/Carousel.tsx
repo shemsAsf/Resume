@@ -21,7 +21,7 @@ export interface CarouselProps {
 }
 
 const DEFAULT_ITEMS: CarouselItem[] = [
-   {
+  {
     id: 1,
     title: "Fitness",
     description: "I hit the gym regularly — it keeps my head clear and trains my discipline.",
@@ -56,7 +56,7 @@ const DEFAULT_ITEMS: CarouselItem[] = [
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
-const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
+const SPRING_OPTIONS = { type: "spring" as const, stiffness: 300, damping: 30 };
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
@@ -152,20 +152,30 @@ export default function Carousel({
   const dragProps = loop
     ? {}
     : {
-        dragConstraints: {
-          left: -trackItemOffset * (carouselItems.length - 1),
-          right: 0,
-        },
-      };
+      dragConstraints: {
+        left: -trackItemOffset * (carouselItems.length - 1),
+        right: 0,
+      },
+    };
+
+  const rotateTransforms = carouselItems.map((_, index) => {
+    const range = [
+      -(index + 1) * trackItemOffset,
+      -index * trackItemOffset,
+      -(index - 1) * trackItemOffset,
+    ];
+    const outputRange = [90, 0, -90];
+    return useTransform(x, range, outputRange, { clamp: false });
+  });
+
 
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden p-4 ${
-        round
-          ? "rounded-full border border-white"
-          : "rounded-[24px] border border-zinc-500"
-      }`}
+      className={`relative overflow-hidden p-4 ${round
+        ? "rounded-full border border-white"
+        : "rounded-[24px] border border-zinc-500"
+        }`}
       style={{
         width: `${baseWidth}px`,
         ...(round && { height: `${baseWidth}px` }),
@@ -188,25 +198,18 @@ export default function Carousel({
         onAnimationComplete={handleAnimationComplete}
       >
         {carouselItems.map((item, index) => {
-          const range = [
-            -(index + 1) * trackItemOffset,
-            -index * trackItemOffset,
-            -(index - 1) * trackItemOffset,
-          ];
-          const outputRange = [90, 0, -90];
-          const rotateY = useTransform(x, range, outputRange, { clamp: false });
+          const rotateY = rotateTransforms[index];
           return (
             <motion.div
               key={index}
-              className={`relative shrink-0 flex flex-col ${
-                round
-                  ? "items-center justify-center text-center bg-zinc-300/50 border-0"
-                  : "items-start justify-between bg-zinc-500/30 border border-zinc-500 rounded-[12px]"
-              } overflow-hidden cursor-grab active:cursor-grabbing`}
+              className={`relative shrink-0 flex flex-col ${round
+                ? "items-center justify-center text-center bg-zinc-300/50 border-0"
+                : "items-start justify-between bg-zinc-500/30 border border-zinc-500 rounded-[12px]"
+                } overflow-hidden cursor-grab active:cursor-grabbing`}
               style={{
                 width: itemWidth,
                 height: round ? itemWidth : "100%",
-                rotateY: rotateY,
+                rotateY,
                 ...(round && { borderRadius: "50%" }),
               }}
               transition={effectiveTransition}
@@ -227,23 +230,21 @@ export default function Carousel({
         })}
       </motion.div>
       <div
-        className={`flex w-full justify-center ${
-          round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
-        }`}
+        className={`flex w-full justify-center ${round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
+          }`}
       >
         <div className="mt-4 flex w-[150px] justify-between px-8">
           {items.map((_, index) => (
             <motion.div
               key={index}
-              className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${
-                currentIndex % items.length === index
-                  ? round
-                    ? "bg-white"
-                    : "bg-zinc-500"
-                  : round
-                    ? "bg-[#555]"
-                    : "bg-[rgba(92,141,100,0.4)]"
-              }`}
+              className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${currentIndex % items.length === index
+                ? round
+                  ? "bg-white"
+                  : "bg-zinc-500"
+                : round
+                  ? "bg-[#555]"
+                  : "bg-[rgba(92,141,100,0.4)]"
+                }`}
               animate={{
                 scale: currentIndex % items.length === index ? 1.2 : 1,
               }}

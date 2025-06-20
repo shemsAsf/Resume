@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import CapsuleTextList from "./Ui/CapsuleText/CapsuleTextList";
-import { Laptop, MapPin, TriangleAlert } from 'lucide-react';
 import Line from "./Ui/Line";
 
 export default function MenuHeader() {
@@ -31,7 +30,7 @@ export default function MenuHeader() {
 				<div className="flex justify-between m-20 h-96">
 					<div className="w-2/5 text-3xl flex items-end">
 						Hi, I am a developer driven by a passion for understanding, building,
-						and refining technology. <br /> Let's create something amazing together!
+						and refining technology. <br /> Let&apos;s create something amazing together!
 					</div>
 					<div className="bg-zinc-100/80 text-zinc-900 text-lg w-full max-w-md rounded-xl p-4">
 						<div className="">

@@ -1,7 +1,5 @@
 "use client";
 
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
-import Line from "./Ui/Line";
 import CapsuleText from "./Ui/CapsuleText/CapsuleText";
 
 export default function Contact() {
