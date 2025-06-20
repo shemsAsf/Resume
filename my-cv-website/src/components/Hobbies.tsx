@@ -1,6 +1,8 @@
 "use client";
 
 import { Paintbrush, Gamepad2, Dumbbell, Music, Camera } from "lucide-react";
+import Line from "./Ui/Line";
+import Carousel from "./Ui/Carousel/Carousel";
 
 const hobbies = [
 	{
@@ -32,28 +34,36 @@ const hobbies = [
 
 export default function Hobbies() {
 	return (
-		<section className="py-20 px-6 text-gray-800">
-			<div className="max-w-5xl mx-auto text-left mb-12">
-
-				<h2 className="text-6xl font-semibold text-gray-800">
-					Hobbies & Interests
-				</h2>
-				<p className="text-lg text-gray-600">
-					When I’m not coding, here’s what lights me up.
-				</p>
+		<section>
+			<div className="w-1/3 mb-30">
+				<h2 className="text-8xl font-unbound text-zinc-200 whitespace-nowrap">Personal Interests</h2>
+				<p className="text-2xl">When I’m not coding, here’s what lights me up.</p>
+				<Line width="w-full" />
 			</div>
+			<div className="flex flex-row w-full justify-between">
+				<Carousel />
+				<div className="text-lg sm:text-3xl sm:max-w-5xl text-right w-2/3">
+					<p className="mb-6">
+						What truly <span className="italic">fascinate</span> me about computer science is
+						understanding <strong>how things works at their core.</strong>
+					</p>
 
-			<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-				{hobbies.map((hobby, idx) => (
-					<div 
-						key={idx}
-						className="rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out"
-					>
-						<div className="mb-4 text-red-500">{hobby.icon}</div>
-						<h3 className="text-xl font-semibold mb-2">{hobby.title}</h3>
-						<p className="text-sm text-gray-700">{hobby.description}</p>
-					</div>
-				))}
+					<p className="mb-6">
+						From a young age, I’ve been captivated by the process of discovering how systems, software,
+						and algorithms come together and how we can use them to do as we please.{" "}
+						<strong>
+							It's not just about learning to code, it's about unraveling and mastering the logic behind
+							the tools we use every day and how they shape our world.
+						</strong>{" "}
+						This curiosity fuels my desire to not only keep learning but also to bring my growing skills
+						and knowledge into the teams I work with.
+					</p>
+
+					<p className="">
+						I’m passionate about applying what I know, collaborating with others, and using technology
+						to create meaningful solutions.
+					</p>
+				</div>
 			</div>
 		</section>
 	);

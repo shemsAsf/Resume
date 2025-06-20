@@ -1,74 +1,58 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import Line from "./Ui/Line";
+import CapsuleText from "./Ui/CapsuleText/CapsuleText";
 
 export default function Contact() {
+  const items = [
+    {
+      text: "Email",
+      onClick: () => window.location.href = "mailto:shems.asfouri@gmail.com"
+    },
+    {
+      text: "Phone",
+      onClick: () => window.location.href = "tel:+33750826423"
+    },
+    {
+      text: "Linkedin",
+      onClick: () => window.open("https://www.linkedin.com/in/shems-asfouri/", "_blank")
+    },
+    {
+      text: "Github",
+      onClick: () => window.open("https://github.com/shemsAsf", "_blank")
+    }
+  ];
+
+
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.8 }}
-      className="my-10 text-center"
-    >
-      <h2 className="text-6xl font-semibold text-gray-800">Contact</h2>
-      <br />
+    <div className=" bg-cover bg-center p-10 mt-30"
+      style={{
+        backgroundImage:
+          "url('/Img/footer.png')",
+      }}>
+        
+      <div className="w-4/5 mx-auto flex flex-col justify-around gap-10">
+        <h2 className="text-5xl font-unbound whitespace-nowrap">Contact Me</h2>
 
-      <div className="mt-10 ml-50 mr-50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-400">
 
-        {/* Email */}
-        <div className="flex flex-col items-center space-y-2">
-          <Mail size={40} className="text-gray-800" />
-          <h3 className="text-lg font-semibold text-gray-800">Email</h3>
-          <a
-            href="mailto:shems@asfouri.fr"
-            className="text-gray-600 hover:text-gray-900 transition"
-          >
-            shems@asfouri.fr
-          </a>
+
+        <div className="flex flex-wrap gap-4">
+          {items.map((item, index) => (
+            <button
+              key={index}
+              onClick={item.onClick}
+              className="cursor-pointer transition hover:scale-105 active:scale-95"
+            >
+              <CapsuleText text={item.text} />
+            </button>
+          ))}
         </div>
-
-        {/* Phone */}
-        <div className="flex flex-col items-center space-y-2">
-          <Phone size={40} className="text-gray-800" />
-          <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
-          <a
-            href="tel:+33750826423"
-            className="text-gray-600 hover:text-gray-900 transition whitespace-nowrap"
-          >
-            +33 7 50 82 64 23
-          </a>
+        <div>
+          <p>shems.asfouri@gmail.com</p>
+          <p>+33 7 50 82 64 23</p>
         </div>
-
-        {/* LinkedIn */}
-        <div className="flex flex-col items-center space-y-2">
-          <Linkedin size={40} className="text-gray-800" />
-          <h3 className="text-lg font-semibold text-gray-800">LinkedIn</h3>
-          <a
-            href="https://www.linkedin.com/in/shems-asfouri/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-900 transition"
-          >
-            linkedin.com/in/shems-asfouri
-          </a>
-        </div>
-
-        {/* GitHub */}
-        <div className="flex flex-col items-center space-y-2">
-          <Github size={40} className="text-gray-800" />
-          <h3 className="text-lg font-semibold text-gray-800">GitHub</h3>
-          <a
-            href="https://github.com/shemsAsf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-900 transition"
-          >
-            github.com/shemsAsf
-          </a>
-        </div>
-
       </div>
-    </motion.section>
+    </div>
   );
 }

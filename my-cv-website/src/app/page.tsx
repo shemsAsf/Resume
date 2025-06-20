@@ -1,15 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Summary from "@/components/Summary";
+import MenuHeader from "@/components/MenuHeader";
 import Skills from "@/components/Skills";
 import RemoteExperience from "@/components/RemoteExperience";
-import Experience from "@/components/Experience";
-import School from "@/components/School";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Hobbies from "@/components/Hobbies";
+import ClickSpark from "@/components/Animations/ClickSpark/ClickSpark";
+import RandomGlowBackground from "@/components/Ui/RandomGlowBackground";
+import Header from "@/components/Header";
+import AboutMe from "@/components/AboutMe";
+import Resume from "@/components/Resume";
 
 const sectionAnimation = {
   initial: { opacity: 0, y: 20 },
@@ -20,42 +22,40 @@ const sectionAnimation = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-200 text-gray-900 font-sans">
-      <Header />
+    <>
+      <div className="relative min-h-screen bg-zinc-900 font-helvetica-neue text-white overflow-hidden">
+        <RandomGlowBackground count={15} />
+        <ClickSpark>
 
-      <main className="max-w-5xl mx-auto px-8 py-6 sm:px-6 sm:py-10 space-y-8">
-        <motion.section {...sectionAnimation}>
-          <Summary />
-        </motion.section>
+          <Header />
+          <MenuHeader />
 
-        <motion.section {...sectionAnimation}>
-          <Experience />
-        </motion.section>
+          <main className="w-4/5 mx-auto flex flex-col gap-20 px-8 py-6 sm:px-6 space-y-8">
+            <motion.section {...sectionAnimation}>
+              <AboutMe />
+            </motion.section>
 
-        <motion.section {...sectionAnimation}>
-          <School />
-        </motion.section>
+            <motion.section {...sectionAnimation}>
+              <Resume />
+            </motion.section>
 
-        <motion.section {...sectionAnimation}>
-          <Projects />
-        </motion.section>
+            <motion.section {...sectionAnimation}>
+              <Skills />
+            </motion.section>
 
-        <motion.section {...sectionAnimation}>
-          <Skills />
-        </motion.section>
+            <motion.section {...sectionAnimation}>
+              <Projects />
+            </motion.section>
 
-        <motion.section {...sectionAnimation}>
-          <RemoteExperience />
-        </motion.section>
+            <motion.section {...sectionAnimation}>
+              <Hobbies />
+            </motion.section>
+          </main>
 
-        <motion.section {...sectionAnimation}>
-          <Hobbies />
-        </motion.section>
-      </main>
-
-      <footer className="py-6 text-center">
-        <Contact />
-      </footer>
-    </div>
+          <Contact />
+        </ClickSpark>
+        
+      </div>
+    </>
   );
 }
