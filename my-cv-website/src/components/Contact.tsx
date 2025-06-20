@@ -27,7 +27,7 @@ export default function Contact() {
     <div className=" bg-cover bg-center p-10 mt-30"
       style={{
         backgroundImage:
-          "url('/Img/footer.png')",
+          "url('Img/footer.png')",
       }}>
         
       <div className="w-4/5 mx-auto flex flex-col justify-around gap-10">

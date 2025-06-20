@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { motion, PanInfo, useMotionValue, useTransform } from "framer-motion";
+import { motion, MotionValue, PanInfo, useMotionValue, useTransform } from "framer-motion";
 import React, { JSX } from "react";
 
 import { Dumbbell, Paintbrush, Music, Gamepad2, Camera } from "lucide-react";
@@ -57,6 +57,28 @@ const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
 const SPRING_OPTIONS = { type: "spring" as const, stiffness: 300, damping: 30 };
+
+/* eslint-disable react-hooks/rules-of-hooks */
+function useRotateTransforms(
+  carouselItems: CarouselItem[],
+  x: MotionValue<number>,
+  trackItemOffset: number
+) {
+  const transforms = React.useMemo(() => {
+    return carouselItems.map((_, index) => {
+      const range = [
+        -(index + 1) * trackItemOffset,
+        -index * trackItemOffset,
+        -(index - 1) * trackItemOffset,
+      ];
+      const outputRange = [90, 0, -90];
+      return useTransform(x, range, outputRange, { clamp: false });
+    });
+  }, [carouselItems, x, trackItemOffset]);
+
+  return transforms;
+}
+/* eslint-enable react-hooks/rules-of-hooks */
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
@@ -158,16 +180,7 @@ export default function Carousel({
       },
     };
 
-  const rotateTransforms = carouselItems.map((_, index) => {
-    const range = [
-      -(index + 1) * trackItemOffset,
-      -index * trackItemOffset,
-      -(index - 1) * trackItemOffset,
-    ];
-    const outputRange = [90, 0, -90];
-    return useTransform(x, range, outputRange, { clamp: false });
-  });
-
+  const rotateTransforms = useRotateTransforms(carouselItems, x, trackItemOffset);
 
   return (
     <div

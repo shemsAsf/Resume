@@ -13,8 +13,7 @@ export default function MenuHeader() {
 				transition={{ duration: 0.5 }}
 				className="h-8/10 w-9/10 mt-1/10 bg-cover bg-center rounded-4xl flex flex-col justify-between"
 				style={{
-					backgroundImage:
-						"url('/Img/Header.png')",
+					backgroundImage: `url('Img/header.png')`,
 				}}
 			>
 				<div className="flex justify-between m-20">
@@ -34,7 +33,7 @@ export default function MenuHeader() {
 					</div>
 					<div className="bg-zinc-100/80 text-zinc-900 text-lg w-full max-w-md rounded-xl p-4">
 						<div className="">
-							<img src="https://em-content.zobj.net/source/apple/419/warning_26a0-fe0f.png" className="w-5" />
+							<img src="/Img/Icons/Alert.png" className="w-5" />
 							<br />
 						</div>
 						<p>
@@ -43,13 +42,13 @@ export default function MenuHeader() {
 						<br />
 						<div className="flex flex-col space-y-1 text-base">
 							<div className="flex items-center gap-2">
-								<img src="https://em-content.zobj.net/source/apple/419/round-pushpin_1f4cd.png" className="w-5" />
-								<img src="https://em-content.zobj.net/source/apple/419/flag-italy_1f1ee-1f1f9.png" className="w-5" />
+								<img src="/Img/Icons/Pin.png" className="w-5" />
+								<img src="/Img/Icons/Italy.png" className="w-5" />
 								<span>Milano, Italy</span>
 							</div>
 							<div className="flex items-center gap-2">
-								<img src="https://em-content.zobj.net/source/apple/419/laptop_1f4bb.png" className="w-5" />
-								<img src="https://em-content.zobj.net/source/apple/419/flag-european-union_1f1ea-1f1fa.png" className="w-5" />
+								<img src="/Img/Icons/Laptop.png" className="w-5" />
+								<img src="/Img/Icons/Europe.png" className="w-5" />
 								<span>Europe, Remote</span>
 							</div>
 						</div>
