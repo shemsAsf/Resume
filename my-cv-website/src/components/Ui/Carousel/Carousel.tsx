@@ -64,17 +64,15 @@ function useRotateTransforms(
   x: MotionValue<number>,
   trackItemOffset: number
 ) {
-  const transforms = React.useMemo(() => {
-    return carouselItems.map((_, index) => {
-      const range = [
-        -(index + 1) * trackItemOffset,
-        -index * trackItemOffset,
-        -(index - 1) * trackItemOffset,
-      ];
-      const outputRange = [90, 0, -90];
-      return useTransform(x, range, outputRange, { clamp: false });
-    });
-  }, [carouselItems, x, trackItemOffset]);
+  const transforms = carouselItems.map((_, index) => {
+    const range = [
+      -(index + 1) * trackItemOffset,
+      -index * trackItemOffset,
+      -(index - 1) * trackItemOffset,
+    ];
+    const outputRange = [90, 0, -90];
+    return useTransform(x, range, outputRange, { clamp: false });
+  });
 
   return transforms;
 }
