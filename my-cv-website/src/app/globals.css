@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;700;900&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import "tailwindcss";
-
-@theme {
-  --font-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-unbound: 'Unbounded', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-  /* Background glow layers */
+/* CSS Variables (theme) */
+:root {
+  --font-unbound: var(--font-unbounded);
   --glow-color: #00ff7f;
   --glow-size: 800px;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Utility Class */
+@layer utilities {
+  .font-unbound {
+    font-family: var(--font-unbound), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
 
+/* Component Layer */
 @layer components {
   .heading-title {
-    @apply text-[clamp(2rem,5vw,6rem)] font-unbound  break-words leading-none mb-0 text-nowrap;
+    @apply text-[clamp(2rem,5vw,6rem)] font-unbound break-words leading-none mb-0 text-nowrap;
   }
 
   .heading-subtitle {
