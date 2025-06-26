@@ -5,19 +5,19 @@ import ResumeCapsule from "./Ui/ResumeCapsule";
 
 export default function Resume() {
     return (
-        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-8">
+        <div className="w-full">
             {/* Title */}
             <div className="w-full sm:w-1/3 mb-12">
-                <h2 className="text-[clamp(2rem,8vw,4rem)] font-unbound text-zinc-200 whitespace-nowrap">
+                <h2 className="heading-title">
                     My Resume
                 </h2>
                 <Line width="w-full" />
             </div>
 
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10">
+    <div className="w-full grid sm:grid-cols-2 gap-10">
                 {/* Column 1: Professional Experience */}
                 <div className="flex flex-col gap-10">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-6">Professional Experience</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">Professional Experience</h3>
                     <ResumeCapsule
                         title="IVALUA - MONTPELLIER"
                         subtitle="Apprenticeship | 2023 (2 years)"
@@ -42,7 +42,7 @@ export default function Resume() {
 
                 {/* Column 2: Education */}
                 <div className="flex flex-col gap-10">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-6">Education</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">Education</h3>
                     <ResumeCapsule
                         title="EPSI - MONTPELLIER"
                         subtitle="Master's Degree | 2023 - 2025"

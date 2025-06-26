@@ -15,7 +15,8 @@ export default function ResumeCapsule({
 	img: string;
 }) {
 	return (
-		<div className="bg-gradient-to-br from-zinc-800/80 to-zinc-950/80 text-white p-6 sm:p-10 rounded-2xl shadow-lg w-full">
+		<div className="bg-gradient-to-br from-zinc-800/80 to-zinc-950/80 text-white p-6 sm:p-10 rounded-2xl shadow-lg w-full h-full flex flex-col">
+
 			<div className="flex justify-between items-start gap-4">
 				<div>
 					<h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">{title}</h2>
