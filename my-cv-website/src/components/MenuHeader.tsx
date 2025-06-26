@@ -13,7 +13,7 @@ export default function MenuHeader() {
 			<div
 				className="w-full h-[85dvh] bg-cover bg-center rounded-3xl flex flex-col justify-between p-[clamp(1rem,3vw,5rem)]"
 				style={{
-					backgroundImage: "url('/Img/Header.png')",
+					backgroundImage: "url('Img/header.png')",
 				}}
 			>
 				<div className="flex flex-col-reverse lg:flex-row justify-between">

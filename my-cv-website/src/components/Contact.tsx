@@ -27,7 +27,7 @@ export default function Contact() {
 		<div className=" bg-cover bg-center p-10 mt-30"
 			style={{
 				backgroundImage:
-					"url('/Img/Footer.png')",
+					"url('Img/Footer.png')",
 			}}>
 
 			<div className="absolute inset-0 bg-zinc-900/40 sm:bg-transparent pointer-events-none z-0"></div>
