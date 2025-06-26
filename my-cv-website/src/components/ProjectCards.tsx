@@ -32,7 +32,7 @@ Built with React.`,
 		description: `A calming and elegant website for a health practitioner. Users can learn about services and book personalized appointments through a fully custom-built scheduling system.
 
 Built with React.ts and a MySQL backend. Focused on simplicity, accessibility, and a peaceful aesthetic to reflect the practitioner's holistic approach.`,
-		image: "/Img/harmonessensBG.png",
+		image: "/Img/HarmonessensBG.png",
 		link: "https://harmonessens.fr/",
 	},
 ];
