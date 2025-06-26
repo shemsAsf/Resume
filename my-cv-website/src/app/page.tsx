@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 import MenuHeader from "@/components/MenuHeader";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
@@ -15,8 +15,8 @@ import Resume from "@/components/Resume";
 const sectionAnimation = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 },
-  viewport: { once: false, amount: 0.3 },
+  transition: { duration: 0.6, ease: easeOut },
+  viewport: { once: false, amount: 0.1 },
 };
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
           <Header />
           <MenuHeader />
 
-          <main className="w-4/5 mx-auto flex flex-col gap-20 px-8 py-6 sm:px-6 space-y-8">
+          <main className="w-[98vw] lg:w-[90vw] mx-auto flex flex-col mt-20 gap-20 px-8 py-6 sm:px-6 space-y-8">
             <motion.section {...sectionAnimation}>
               <AboutMe />
             </motion.section>

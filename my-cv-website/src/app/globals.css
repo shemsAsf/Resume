@@ -15,17 +15,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes move-glow {
-  0% {
-    transform: translate(0, 0) scale(1) rotate(0deg);
-    opacity: 0.5;
+@layer components {
+  .heading-title {
+    @apply text-[clamp(2rem,5vw,6rem)] font-unbound  break-words leading-none mb-0 text-nowrap;
   }
-  50% {
-    transform: translate(50px, -30px) scale(1.3) rotate(30deg);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translate(-40px, 60px) scale(1.1) rotate(-15deg);
-    opacity: 0.5;
+
+  .heading-subtitle {
+    @apply text-[clamp(1rem,3vw,1.5rem)] text-zinc-200 leading-none mb-0 w-[300%];
   }
 }

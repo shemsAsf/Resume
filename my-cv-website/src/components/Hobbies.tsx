@@ -6,14 +6,16 @@ import Carousel from "./Ui/Carousel/Carousel";
 export default function Hobbies() {
 	return (
 		<section>
-			<div className="w-1/3 mb-30">
-				<h2 className="text-8xl font-unbound text-zinc-200 whitespace-nowrap">Personal Interests</h2>
-				<p className="text-2xl">When I’m not coding, here’s what lights me up.</p>
+			<div className="w-1/3 mb-10 lg:mb-30">
+				<h2 className="heading-title">Personal Interests</h2>
+				<p className="heading-subtitle">When I’m not coding, here’s what lights me up.</p>
 				<Line width="w-full" />
 			</div>
-			<div className="flex flex-row w-full justify-between">
-				<Carousel />
-				<div className="text-lg sm:text-3xl sm:max-w-5xl text-right w-2/3">
+			<div className="flex flex-col-reverse lg:flex-row w-full justify-between">
+				<div className="w-full flex justify-center sm:justify-start">
+					<Carousel />
+				</div>
+				<div className="text-lg sm:text-3xl sm:max-w-5xl mb-20 lg:mb-0 text-left lg:text-right w-full lg:w-2/3">
 					<p className="mb-6">
 						What truly <span className="italic">fascinate</span> me about computer science is
 						understanding <strong>how things works at their core.</strong>

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const projects = [
 	{
@@ -17,15 +18,6 @@ This is still a work in progress with a playable demo.`,
 		link: "",
 	},
 	{
-		title: "Harmonessens",
-		subtitle: "Wellness & Appointments",
-		description: `A calming and elegant website for a health practitioner. Users can learn about services and book personalized appointments through a fully custom-built scheduling system.
-
-Built with React.ts and a MySQL backend. Focused on simplicity, accessibility, and a peaceful aesthetic to reflect the practitioner's holistic approach.`,
-		image: "/Img/harmonessensBG.png",
-		link: "https://harmonessens.fr/",
-	},
-	{
 		title: "Creative Portfolio",
 		subtitle: "UI/UX & Visual Design",
 		description: `A portfolio site crafted for a visual designer to showcase their work in branding, animation, and 3D design.
@@ -34,33 +26,53 @@ Built with React.`,
 		image: "/Img/KatPortfolio.png",
 		link: "",
 	},
+	{
+		title: "Harmonessens",
+		subtitle: "Wellness & Appointments",
+		description: `A calming and elegant website for a health practitioner. Users can learn about services and book personalized appointments through a fully custom-built scheduling system.
+
+Built with React.ts and a MySQL backend. Focused on simplicity, accessibility, and a peaceful aesthetic to reflect the practitioner's holistic approach.`,
+		image: "/Img/harmonessensBG.png",
+		link: "https://harmonessens.fr/",
+	},
 ];
 
 
 export default function ProjectCards() {
 	const [activeIndex, setActiveIndex] = useState(0);
+	const isMobile = useIsMobile();
 
 	return (
 		<section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen ml-[-50vw] px-8 py-12">
-			<div className="flex gap-6 justify-center items-stretch">
+			<div className="flex flex-col sm:flex-row gap-6 justify-center items-stretch">
 				{projects.map((project, index) => {
 					const isActive = activeIndex === index;
 					const isAdjacent = Math.abs(activeIndex - index) === 1;
 
-					let width = "8%";
-					if (isActive) width = "60%";
-					else if (isAdjacent) width = "18%";
+					let style = {};
+					if (isMobile) {
+						style = {
+							height: isActive ? "70vh" : "12vh",
+							width: "100%",
+						};
+					} else {
+						let width = "8%";
+						if (isActive) width = "60%";
+						else if (isAdjacent) width = "18%";
+
+						style = { width };
+					}
 
 					return (
 						<motion.div
 							key={index}
 							layout
 							onClick={() => setActiveIndex(index)}
-							className={`cursor-pointer rounded-3xl bg-zinc-600/30 text-white p-6 flex-shrink-0 h-[80vh] transition-opacity duration-300 ${!isActive ? "opacity-60 hover:opacity-90" : ""
-								}`}
-							style={{ width }}
+							className={`cursor-pointer rounded-3xl bg-zinc-600/30 text-white p-6 flex-shrink-0 transition-opacity duration-300 ${!isActive ? "opacity-60 hover:opacity-90" : ""}`}
+							style={style}
 							transition={{ type: "spring", stiffness: 300, damping: 30 }}
 						>
+
 							<div className="flex flex-col h-full">
 								<motion.div
 									initial={{ opacity: 0, y: 10 }}
@@ -105,7 +117,8 @@ export default function ProjectCards() {
 											animate={{ opacity: 1, y: 0 }}
 											exit={{ opacity: 0, y: 20 }}
 											transition={{ delay: 0.3 }}
-											className="rounded-xl overflow-hidden bg-gray-700 w-full flex-grow"
+											className={`rounded-xl overflow-hidden bg-gray-700 w-full ${isMobile ? "h-[30vh]" : "flex-grow"
+												}`}
 										>
 											<Image
 												src={project.image}

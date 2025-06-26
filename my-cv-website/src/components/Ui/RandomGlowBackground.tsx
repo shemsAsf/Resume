@@ -1,16 +1,17 @@
 'use client';
 
+import useIsMobile from '@/hooks/useIsMobile';
 import React, { useEffect, useMemo, useState } from 'react';
 
 interface GlowDot {
 	x: number;
 	y: number;
 	size: number;
-	delay: number;
 }
 
 export default function RandomGlowBackground({ count = 30 }: { count?: number }) {
 	const [mounted, setMounted] = useState(false);
+	const isMobile = useIsMobile();
 
 	useEffect(() => {
 		setMounted(true);
@@ -22,8 +23,7 @@ export default function RandomGlowBackground({ count = 30 }: { count?: number })
 				? -40 + Math.random() * 30
 				: 60 + Math.random() * 30,
 			y: Math.random() * 130 - 15,
-			size: 1000 + Math.random() * 250,
-			delay: Math.random() * -20,
+			size: (isMobile ? 40 : 500) + Math.random() * 250,
 		}));
 	}, [count]);
 
@@ -44,7 +44,6 @@ export default function RandomGlowBackground({ count = 30 }: { count?: number })
 						background: 'radial-gradient(circle at center, rgba(40, 255, 200, 0.8) 0%, rgba(40, 255, 200, 0) 70%)',
 						filter: `blur(${dot.size / 2}px)`,
 						transform: `scale(${Math.random() * 1.5 + 0.8}) skew(${Math.random() * 10}deg, ${Math.random() * 10}deg)`,
-						animation: `move-glow ${20 + Math.random() * 30}s ease-in-out infinite alternate`,
 					} as React.CSSProperties}
 				/>
 			))}

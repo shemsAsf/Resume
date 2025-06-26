@@ -64,17 +64,15 @@ function useRotateTransforms(
   x: MotionValue<number>,
   trackItemOffset: number
 ) {
-  const transforms = React.useMemo(() => {
-    return carouselItems.map((_, index) => {
-      const range = [
-        -(index + 1) * trackItemOffset,
-        -index * trackItemOffset,
-        -(index - 1) * trackItemOffset,
-      ];
-      const outputRange = [90, 0, -90];
-      return useTransform(x, range, outputRange, { clamp: false });
-    });
-  }, [carouselItems, x, trackItemOffset]);
+  const transforms = carouselItems.map((_, index) => {
+    const range = [
+      -(index + 1) * trackItemOffset,
+      -index * trackItemOffset,
+      -(index - 1) * trackItemOffset,
+    ];
+    const outputRange = [90, 0, -90];
+    return useTransform(x, range, outputRange, { clamp: false });
+  });
 
   return transforms;
 }
@@ -185,7 +183,7 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden p-4 ${round
+      className={`relative overflow-hidden p-4 h-1/2 ${round
         ? "rounded-full border border-white"
         : "rounded-[24px] border border-zinc-500"
         }`}
@@ -256,7 +254,7 @@ export default function Carousel({
                   : "bg-zinc-500"
                 : round
                   ? "bg-[#555]"
-                  : "bg-[rgba(92,141,100,0.4)]"
+                  : "bg-[#333]"
                 }`}
               animate={{
                 scale: currentIndex % items.length === index ? 1.2 : 1,

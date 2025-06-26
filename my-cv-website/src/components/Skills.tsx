@@ -9,11 +9,11 @@ export default function Skills() {
 	return (
 		<>
 			<div className="w-1/3">
-				<h2 className="text-8xl font-unbound text-zinc-200 whitespace-nowrap">Skills</h2>
+				<h2 className="heading-title">Skills</h2>
 				<Line width="w-full" />
 			</div>
-			<div className="flex flex-row justify-between mt-10">
-				<div className="flex flex-col w-1/3 gap-20">
+			<div className="flex flex-col lg:flex-row justify-between mt-10">
+				<div className="flex flex-col w-full lg:w-1/3 gap-5 lg:gap-20">
 					<div>
 						<h3 className="text-2xl font-bold mb-3">Web programming</h3>
 						<CapsuleTextList items={["HTML5", "CSS3", "JavaScript", "TypeScript"]} />
@@ -49,7 +49,7 @@ export default function Skills() {
 
 
 				</div>
-				<div className="flex flex-col w-1/2 gap-20">
+				<div className="flex flex-col w-full lg:w-1/2 gap-20 mt-20 lg:mt-0">
 					<div className="flex flex-col gap-5">
 						<h3 className="text-2xl font-bold mb-3">Languages</h3>
 						<SkillPercentageBar title="C# (.net)" percent={75} />
