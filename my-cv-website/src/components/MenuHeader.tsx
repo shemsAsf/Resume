@@ -41,7 +41,7 @@ export default function MenuHeader() {
 				<div className="flex flex-col lg:flex-row justify-between">
 					<div className="w-full lg:w-2/5 text-[clamp(1.125rem,1.5vw,1.875rem)] flex items-end">
 						Hi, I am a developer driven by a passion for understanding, building, and refining technology. <br />
-						Let's create something amazing together!
+						Let&apos;s create something amazing together!
 					</div>
 					<div>
 						{!isMobile && <JobAvailability />}
