@@ -8,9 +8,9 @@ import RemoteExperience from "./RemoteExperience";
 export default function Skills() {
 	return (
 		<>
-			<div className="w-1/3">
+			<div className="w-full">
 				<h2 className="heading-title">Skills</h2>
-				<Line width="w-full" />
+				<Line width="sm:w-1/3 w-full" />
 			</div>
 			<div className="flex flex-col lg:flex-row justify-between mt-10">
 				<div className="flex flex-col w-full lg:w-1/3 gap-5 lg:gap-20">

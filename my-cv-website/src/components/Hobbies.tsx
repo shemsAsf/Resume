@@ -6,10 +6,10 @@ import Carousel from "./Ui/Carousel/Carousel";
 export default function Hobbies() {
 	return (
 		<section>
-			<div className="w-1/3 mb-10 lg:mb-30">
+			<div className="w-full mb-10 lg:mb-30">
 				<h2 className="heading-title">Personal Interests</h2>
 				<p className="heading-subtitle">When I’m not coding, here’s what lights me up.</p>
-				<Line width="w-full" />
+				<Line width="sm:w-1/3 w-full" />
 			</div>
 			<div className="flex flex-col-reverse lg:flex-row w-full justify-between">
 				<div className="w-full flex justify-center sm:justify-start">

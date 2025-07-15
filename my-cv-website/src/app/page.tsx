@@ -29,7 +29,7 @@ export default function Home() {
           <Header />
           <MenuHeader />
 
-          <main className="w-[98vw] lg:w-[90vw] mx-auto flex flex-col mt-20 gap-20 px-8 py-6 sm:px-6 space-y-8">
+          <main className="w-[98vw] lg:w-[90vw] mx-auto flex flex-col mt-5 gap-5 lg:mt-20 lg:gap-20 px-8 py-6 sm:px-6 space-y-8">
             <motion.section {...sectionAnimation}>
               <AboutMe />
             </motion.section>

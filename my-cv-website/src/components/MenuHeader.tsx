@@ -17,7 +17,7 @@ export default function MenuHeader() {
 				}}
 			>
 				<div className="flex flex-col-reverse lg:flex-row justify-between">
-					<div className="flex flex-col w-full lg:w-1/4 p-5 lg:p-0 rounded-3xl bg-zinc-800/50 lg:bg-transparent mt-9 lg:mt-0">
+					<div className="flex flex-col w-full lg:w-1/4 p-5 lg:p-0 rounded-3xl bg-zinc-800/75 lg:bg-transparent mt-9 lg:mt-0">
 						<p className="text-[clamp(1rem,2vw,2.5rem)] font-helvetica-neue font-light leading-tight">
 							Full&nbsp;Stack&nbsp;Developer | Software&nbsp;Engineer
 						</p>
@@ -33,7 +33,7 @@ export default function MenuHeader() {
 							]}
 						/>
 					</div>
-					<h1 className="text-[clamp(3rem,5vw,10rem)] font-helvetica-neue font-bold text-left lg:text-right w-full mt-5 lg:mt-0 leading-none">
+					<h1 className="text-[clamp(3rem,5vw,10rem)] font-helvetica-neue font-bold text-left lg:text-right w-full  leading-none">
 						SHEMS <br /> ASFOURI
 					</h1>
 				</div>
@@ -49,6 +49,7 @@ export default function MenuHeader() {
 				</div>
 			</div>
 			<div>
+				<br/>
 				{isMobile && <JobAvailability />}
 			</div>
 		</div>
