@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <div className="relative min-h-screen bg-zinc-900 font-helvetica-neue text-white overflow-hidden">
-        <RandomGlowBackground count={15} />
+        <RandomGlowBackground count={30} />
         <ClickSpark>
 
           <Header />
