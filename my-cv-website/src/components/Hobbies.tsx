@@ -5,7 +5,7 @@ import Carousel from "./Ui/Carousel/Carousel";
 
 export default function Hobbies() {
 	return (
-		<section>
+		<div>
 			<div className="w-full mb-10 lg:mb-30">
 				<h2 className="heading-title">Personal Interests</h2>
 				<p className="heading-subtitle">When I’m not coding, here’s what lights me up.</p>
@@ -38,6 +38,6 @@ export default function Hobbies() {
 					</p>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

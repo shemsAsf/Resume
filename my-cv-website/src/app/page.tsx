@@ -12,13 +12,6 @@ import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
 import Resume from "@/components/Resume";
 
-const sectionAnimation = {
-  initial: { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: easeOut },
-  viewport: { once: false, amount: 0.1 },
-};
-
 export default function Home() {
   return (
     <>
@@ -30,25 +23,11 @@ export default function Home() {
           <MenuHeader />
 
           <main className="w-[98vw] lg:w-[90vw] mx-auto flex flex-col mt-5 gap-5 lg:mt-20 lg:gap-20 px-8 py-6 sm:px-6 space-y-8">
-            <motion.section {...sectionAnimation}>
               <AboutMe />
-            </motion.section>
-
-            <motion.section {...sectionAnimation}>
               <Resume />
-            </motion.section>
-
-            <motion.section {...sectionAnimation}>
               <Skills />
-            </motion.section>
-
-            <motion.section {...sectionAnimation}>
               <Projects />
-            </motion.section>
-
-            <motion.section {...sectionAnimation}>
               <Hobbies />
-            </motion.section>
           </main>
 
           <Contact />

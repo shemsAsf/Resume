@@ -5,12 +5,12 @@ import Line from "./Ui/Line";
 
 export default function Projects() {
     return (
-        <>
+        <div>
             <div className="w-full mb-0 lg:mb-25">
                 <h2 className="heading-title">Personal projects</h2>
                 <Line width="sm:w-1/3 w-full" />
             </div>
             <ProjectCards />
-        </>
+        </div>
     );
 }

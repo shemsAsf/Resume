@@ -34,7 +34,7 @@ export default function RemoteExperience() {
 				{remoteSkills.map((skill, idx) => (
 					<div
 						key={idx}
-						className="w-[300px] bg-gradient-to-r from-stone-300/80 to-stone-100/80 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out backdrop-blur-sm"
+						className="w-full sm:w-[45%] bg-gradient-to-r from-stone-300/80 to-stone-100/80 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out backdrop-blur-sm"
 
 					>
 						<h3 className="text-xl font-semibold mb-2">{skill.title}</h3>

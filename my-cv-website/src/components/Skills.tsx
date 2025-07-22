@@ -7,7 +7,7 @@ import RemoteExperience from "./RemoteExperience";
 
 export default function Skills() {
 	return (
-		<>
+		<div>
 			<div className="w-full">
 				<h2 className="heading-title">Skills</h2>
 				<Line width="sm:w-1/3 w-full" />
@@ -64,6 +64,6 @@ export default function Skills() {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
