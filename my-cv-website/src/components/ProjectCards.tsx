@@ -68,7 +68,7 @@ export default function ProjectCards() {
 							key={index}
 							layout
 							onClick={() => setActiveIndex(index)}
-							className={`cursor-pointer rounded-3xl bg-zinc-600/70 text-white p-6 flex-shrink-0 transition-opacity duration-300 ${!isActive ? "opacity-60 hover:opacity-90" : ""}`}
+							className={`cursor-pointer rounded-3xl bg-zinc-900/40 text-white p-6 flex-shrink-0 transition-opacity duration-300 ${!isActive ? "opacity-60 hover:opacity-90" : ""}`}
 							style={style}
 							transition={{ type: "spring", stiffness: 300, damping: 30 }}
 						>
