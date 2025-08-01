@@ -29,6 +29,8 @@ export default function MenuHeader() {
 								"TypeScript",
 								"Node.js",
 								"SQL",
+								"C++",
+								"Python",
 								"And many more",
 							]}
 						/>

@@ -1,6 +1,5 @@
 "use client";
 
-import { easeOut, motion } from "framer-motion";
 import MenuHeader from "@/components/MenuHeader";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
