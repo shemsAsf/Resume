@@ -20,7 +20,7 @@ export default function AboutMe() {
 
 				<div className="w-full sm:w-2/3 text-[clamp(1rem,1.5vw,1.5rem)] text-left sm:text-right leading-relaxed">
 					<p>
-						I’m a pragmatic and creative developer with a strong focus on{" "}
+						I’m an enthusiastic and creative developer with a strong focus on{" "}
 						<strong>clean architecture, scalability, and maintainability.</strong> I enjoy
 						designing <strong>modular systems, building thoughtful user experiences, and
 							structuring codebases</strong> that are easy to extend and collaborate on.

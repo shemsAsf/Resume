@@ -52,11 +52,11 @@ export default function Skills() {
 				<div className="flex flex-col w-full lg:w-1/2 gap-20 mt-20 lg:mt-0">
 					<div className="flex flex-col gap-5">
 						<h3 className="text-2xl font-bold mb-3">Languages</h3>
-						<SkillPercentageBar title="C# (.net)" percent={75} />
-						<SkillPercentageBar title="Node.js" percent={80} />
-						<SkillPercentageBar title="React" percent={90} />
-						<SkillPercentageBar title="SQL" percent={85} />
-						<SkillPercentageBar title="TypeScript" percent={80} />
+						<SkillPercentageBar title="TypeScript" percent={90} />
+						<SkillPercentageBar title="C# (.net)" percent={85} />
+						<SkillPercentageBar title="Python" percent={80} />
+						<SkillPercentageBar title="Java" percent={65} />
+						<SkillPercentageBar title="C++" percent={60} />
 					</div>
 					<div>
 						<h3 className="text-2xl font-bold mb-3">Remote work skills</h3>
