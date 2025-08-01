@@ -5,17 +5,17 @@ import Carousel from "./Ui/Carousel/Carousel";
 
 export default function Hobbies() {
 	return (
-		<section>
-			<div className="w-1/3 mb-10 lg:mb-30">
+		<div>
+			<div className="w-full mb-10 lg:mb-30">
 				<h2 className="heading-title">Personal Interests</h2>
 				<p className="heading-subtitle">When I’m not coding, here’s what lights me up.</p>
-				<Line width="w-full" />
+				<Line width="sm:w-1/3 w-full" />
 			</div>
 			<div className="flex flex-col-reverse lg:flex-row w-full justify-between">
-				<div className="w-full flex justify-center sm:justify-start">
+				<div className="flex justify-center sm:justify-start">
 					<Carousel />
 				</div>
-				<div className="text-lg sm:text-3xl sm:max-w-5xl mb-20 lg:mb-0 text-left lg:text-right w-full lg:w-2/3">
+				<div className="text-[clamp(1rem,1.5vw,1.5rem)] mb-20 lg:mb-0 text-left lg:text-right w-full sm:w-2/3">
 					<p className="mb-6">
 						What truly <span className="italic">fascinate</span> me about computer science is
 						understanding <strong>how things works at their core.</strong>
@@ -38,6 +38,6 @@ export default function Hobbies() {
 					</p>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

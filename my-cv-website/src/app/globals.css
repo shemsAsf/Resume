@@ -11,11 +11,11 @@
 /* Component Layer */
 @layer components {
   .heading-title {
-    @apply text-[clamp(2rem,5vw,6rem)] break-words leading-none mb-0 text-nowrap;
+    @apply text-[clamp(2rem,5vw,6rem)] break-words leading-none mb-2;
     font-family: var(--font-unbounded);
   }
 
   .heading-subtitle {
-    @apply text-[clamp(1rem,3vw,1.5rem)] text-zinc-200 leading-none mb-0 w-[300%];
+    @apply text-[clamp(1rem,3vw,1.5rem)] text-zinc-200 leading-none mb-3 w-[300%];
   }
 }

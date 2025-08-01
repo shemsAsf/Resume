@@ -7,17 +7,19 @@ export default function Resume() {
     return (
         <div className="w-full">
             {/* Title */}
-            <div className="w-full sm:w-1/3 mb-12">
+            <div className="w-full mb-12">
                 <h2 className="heading-title">
                     My Resume
                 </h2>
-                <Line width="w-full" />
+                <Line width="sm:w-1/3 w-full" />
             </div>
 
-    <div className="w-full grid sm:grid-cols-2 gap-10">
+            <div className="w-full grid sm:grid-cols-2 gap-10">
                 {/* Column 1: Professional Experience */}
                 <div className="flex flex-col gap-10">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">Professional Experience</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold sm:mb-3 -mb-3 sm:text-center lg:text-left text-left">
+                        Professional Experience
+                    </h3>
                     <ResumeCapsule
                         title="IVALUA - MONTPELLIER"
                         subtitle="Apprenticeship | 2023 (2 years)"
@@ -42,7 +44,9 @@ export default function Resume() {
 
                 {/* Column 2: Education */}
                 <div className="flex flex-col gap-10">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">Education</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold sm:mb-3 -mb-3 sm:text-center lg:text-left text-left">
+                        Education
+                    </h3>
                     <ResumeCapsule
                         title="EPSI - MONTPELLIER"
                         subtitle="Master's Degree | 2023 - 2025"

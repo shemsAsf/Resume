@@ -8,7 +8,7 @@ export default function AboutMe() {
 			<div className="w-full lg:w-2/3 mb-4">
 				<h2 className="heading-title">About Me</h2>
 				<p className="heading-subtitle">My line of work</p>
-				<Line width="lg:w-1/2 w-full" />
+				<Line width="sm:w-1/3 w-full" />
 			</div>
 			{/* Content Section */}
 			<div className="flex flex-col sm:flex-row items-center justify-between gap-6">
