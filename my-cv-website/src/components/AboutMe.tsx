@@ -4,14 +4,14 @@ import Line from "./Ui/Line";
 
 export default function AboutMe() {
 	return (
-		<div className="w-full">
-			<div className="w-full lg:w-2/3 mb-4">
+		<div className="flex flex-col min-h-[85vh]" id="AboutMe">
+			<div className="w-full lg:w-2/3 flex-none">
 				<h2 className="heading-title">About Me</h2>
 				<p className="heading-subtitle">My line of work</p>
 				<Line width="sm:w-1/3 w-full" />
 			</div>
-			{/* Content Section */}
-			<div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+			
+			<div className="flex flex-col sm:flex-row items-center justify-between gap-6 grow">
 				<img
 					src="/Img/MyPicture.jpg"
 					alt="Your Photo"

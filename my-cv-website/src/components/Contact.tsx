@@ -24,11 +24,12 @@ export default function Contact() {
 
 
 	return (
-		<div className="relative bg-cover bg-center p-10 mt-30"
+		<footer className="mt-auto bg-cover bg-center p-10"
 			style={{
 				backgroundImage:
 					"url('Img/Footer.png')",
-			}}>
+			}}
+			id="Contact">
 			<div className="w-5/6 lg:w-4/5 mx-auto flex flex-col justify-around gap-3 lg:gap-10 z-10">
 				<h2 className="text-[clamp(2rem,5vw,3rem)] font-light font-unbound whitespace-nowrap">Contact Me</h2>
 				<div className="flex flex-wrap gap-4">
@@ -47,6 +48,6 @@ export default function Contact() {
 					<p>+33 7 50 82 64 23</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 }

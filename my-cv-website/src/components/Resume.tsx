@@ -5,7 +5,7 @@ import ResumeCapsule from "./Ui/ResumeCapsule";
 
 export default function Resume() {
     return (
-        <div className="w-full">
+        <div className="w-full" id="Resume">
             {/* Title */}
             <div className="w-full mb-12">
                 <h2 className="heading-title">

@@ -9,7 +9,7 @@ export default function MenuHeader() {
 	const isMobile = useIsMobile();
 
 	return (
-		<div className="items-center justify-center px-4 sm:px-10 mt-[10vh]">
+		<div className="items-center justify-center px-4 sm:px-10 mt-[10vh]" id="home">
 			<div
 				className="w-full h-[85dvh] bg-cover bg-center rounded-3xl flex flex-col justify-between p-[clamp(1rem,3vw,5rem)]"
 				style={{

@@ -3,9 +3,9 @@
 import Line from "./Ui/Line";
 import Carousel from "./Ui/Carousel/Carousel";
 
-export default function Hobbies() {
+export default function Interest() {
 	return (
-		<div>
+		<div className="flex flex-col min-h-[85vh]" id="Interest">
 			<div className="w-full mb-10 lg:mb-30">
 				<h2 className="heading-title">Personal Interests</h2>
 				<p className="heading-subtitle">When I’m not coding, here’s what lights me up.</p>
