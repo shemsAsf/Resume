@@ -16,6 +16,6 @@
   }
 
   .heading-subtitle {
-    @apply text-[clamp(1rem,3vw,1.5rem)] text-zinc-200 leading-none mb-3 w-[300%];
+    @apply text-[clamp(1rem,3vw,1.5rem)] text-zinc-200 leading-none mb-3 w-[300%] font-normal;
   }
 }

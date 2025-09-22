@@ -64,7 +64,7 @@ export default function Header() {
                                 <li key={i} className="
                                                 relative before:absolute before:inset-0 before:bg-black/20 before:transition-opacity before:duration-200
                                                 hover:before:opacity-0
-                                                hover:border-b-4 
+                                                hover:border-b-3 
                                                 before:pointer-events-none
                                             ">
                                     {item.type === "download" ? (

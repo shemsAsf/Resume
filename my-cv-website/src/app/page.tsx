@@ -5,7 +5,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Hobbies from "@/components/Interests";
-import ClickSpark from "@/components/Animations/ClickSpark/ClickSpark";
+import ClickSpark from "@/components/Animations/ClickSpark";
 import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
 import Resume from "@/components/Resume";
@@ -20,6 +20,7 @@ export default function Home() {
                     className="snap-y h-[100vh] snap-proximity scroll-pt-[10vh]
                     overflow-y-scroll overflow-x-hidden relative z-0
                     pointer-events-auto"
+                    id="scrollable-container"
                 >
                     <section className="snap-start">
                         <MenuHeader />

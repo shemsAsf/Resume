@@ -11,7 +11,7 @@ export default function Interest() {
 				<p className="heading-subtitle">When I’m not coding, here’s what lights me up.</p>
 				<Line width="sm:w-1/3 w-full" />
 			</div>
-			<div className="flex flex-col-reverse lg:flex-row w-full justify-between">
+			<div className="flex flex-col-reverse lg:flex-row w-full justify-between md:mb-0 mb-10">
 				<div className="flex justify-center sm:justify-start">
 					<Carousel />
 				</div>
