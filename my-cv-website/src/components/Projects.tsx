@@ -114,10 +114,10 @@ export default function Projects() {
           <div
             className="w-full md:w-[90vw] h-[70vh] md:h-[80vh] 
               flex flex-row md:items-center gap-6 
-              md:p-6 pt-6 rounded-xl shadow-md text-center"
+              pt-6 rounded-xl shadow-md text-center"
           >
             <div
-              className="w-full md:w-1/3 flex flex-col h-full rounded-lg 
+              className="w-full md:w-2/3 lg:w-1/3 flex flex-col h-full rounded-lg 
                 bg-white text-gray-800 p-10 pb-5"
             >
               <AnimatePresence mode="wait" custom={direction}>
@@ -185,7 +185,7 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="hidden md:block md:w-2/3 h-full">
+            <div className="hidden md:block md:w-1/3 lg:w-2/3 h-full">
               <AnimatePresence mode="wait" custom={direction}>
                 <motion.img
                   key={project.image}

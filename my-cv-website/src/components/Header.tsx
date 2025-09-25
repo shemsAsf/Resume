@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const cvPath = "/CV_Shems_Asfouri.pdf";
 
     const menuItems = [
         { name: "Home", href: "#home", type: "scroll" },
@@ -14,7 +15,7 @@ export default function Header() {
         { name: "Projects", href: "#Projects", type: "scroll" },
         { name: "Interest", href: "#Interest", type: "scroll" },
         { name: "Contact ", href: "#Contact ", type: "scroll" },
-        { name: "Download CV", href: "/CV_Shems_Asfouri.pdf", type: "download" },
+        { name: "Download CV", href: cvPath, type: "download" },
     ];
 
     const handleClick = (item: typeof menuItems[number]) => {
@@ -22,26 +23,31 @@ export default function Header() {
 
         if (item.type === "scroll") {
             const target = document.querySelector(item.href);
-            if (target) {
-                console.log("Transporting you");
+            if (target)
                 target.scrollIntoView({ behavior: "smooth" });
-            }
-            else{
-                console.log("Div not found");
-            }
         }
     };
 
     return (
         <header className="fixed top-0 left-0 w-full z-50 bg-transparent h-[10vh]">
-            <div className="flex justify-between items-center px-4 sm:px-10 md:px-20 h-full">
+            <div className="flex justify-between items-center px-4 sm:px-10 md:px-20 h-full bg-zinc-900">
                 <div className="text-[clamp(1rem,4vw,1.5rem)] font-bold">SHEMS ASFOURI</div>
-                <button onClick={() => setMenuOpen(!menuOpen)} className="p-2">
-                    {menuOpen ?
-                        <X className="w-7 h-7 sm:w-10 sm:h-10" /> :
-                        <Menu className="w-7 h-7 sm:w-10 sm:h-10" />
-                    }
-                </button>
+                <div className="flex justify-center items-center gap-2 sm:gap-4 lg:gap-6">
+                    <a
+                        className="text-[clamp(1rem,4vw,1.5rem)]"
+                        href={cvPath}
+                        download
+                    >
+                        <span className="hidden sm:inline">Download CV</span>
+                        <span className="inline sm:hidden">CV</span>
+                    </a>
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="p-2">
+                        {menuOpen ?
+                            <X className="w-7 h-7 sm:w-10 sm:h-10" /> :
+                            <Menu className="w-7 h-7 sm:w-10 sm:h-10" />
+                        }
+                    </button>
+                </div>
 
                 {menuOpen && (
                     <div
@@ -55,7 +61,7 @@ export default function Header() {
                         className={`fixed z-50 bg-zinc-800 shadow-lg transition-transform duration-300 ease-in-out
                             md:top-0 md:right-0 md:h-full md:w-64
                             top-0 left-0 w-full md:left-auto
-                            
+                            overflow-y-scroll overflow-x-clip
                             ${menuOpen ? "translate-x-0 translate-y-0" : "translate-x-full md:translate-y-0 -translate-y-full md:translate-x-0"}
                             `}
                     >
