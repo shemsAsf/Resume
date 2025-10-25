@@ -1,0 +1,169 @@
+{
+    "role": "Full Stack Developer | Software Engineer",
+    "and_more": "And many more",
+    "intro": "Hi, I am a developer driven by a passion for understanding, building, and refining technology. Let's create something amazing together!",
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "skills": "Skills",
+    "projects_title": "Projects",
+    "interest": "Interest",
+    "contact": "Contact",
+    "download_cv": "Download CV",
+    "about_me": "About Me",
+    "my_line_of_work": "My line of work",
+    "my_photo_alt": "Your Photo",
+    "about_paragraph_1": {
+        "part1": "I’m an enthusiastic and creative developer with a strong focus on",
+        "part2": "clean architecture, scalability, and maintainability.",
+        "part3": "I enjoy designing",
+        "part4": "modular systems, building thoughtful user experiences, and structuring codebases",
+        "part5": "that are easy to extend and collaborate on."
+    },
+    "about_paragraph_2": {
+        "part1": "Whether it’s client-side interfaces or backend logic, I aim for",
+        "part2": "clarity, reusability, and long-term value",
+        "part3": "in every project."
+    },
+    "my_resume": "My Resume",
+    "professional_experience": "Professional Experience",
+    "education": "Education",
+    "ivalua": {
+        "title": "IVALUA - MONTPELLIER",
+        "subtitle": "Apprenticeship | 2023 (2 years)",
+        "text": "During my internship at Ivalua, a global leader in cloud-based procurement and spend management software, I worked on improving an internal tool used by the R&D team. My contributions helped streamline development workflows and enhance productivity across engineering teams."
+    },
+    "harmonessens": {
+        "title": "HARMONESSENS - SAINT GELY DU FESC",
+        "subtitle": "Freelance | 2024 (3 months)",
+        "text": "I developed a website in React for a naturopath, featuring a custom-built appointment booking system with an integrated calendar. The site includes presentation, contact, and reservation pages."
+    },
+    "degriff": {
+        "title": "DEGRIFF PC - SAINT GELY DU FESC",
+        "subtitle": "Internship | 2021 (1 month)",
+        "text": "Degriff PC is a local hardware store known for its personalized service and repair expertise. In addition to selling computer hardware, they operate a workshop offering device repairs."
+    },
+    "epsi": {
+        "title": "EPSI - MONTPELLIER",
+        "subtitle": "Master's Degree | 2023 - 2025",
+        "text": "I joined EPSI in 2023 to pursue a Mastère in Information Systems. The program focuses on software architecture, DevOps, and data engineering."
+    },
+    "cmi": {
+        "title": "CMI - MONTPELLIER SCIENCE UNIVERSITY",
+        "subtitle": "Bachelor's Degree | 2020 - 2023",
+        "text": "I completed the first three years of the CMI at Montpellier Science University, earning a Bachelor's as part of the selective FIGURE network."
+    },
+    "web_programming": "Web Programming",
+    "web_programming_items": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript"
+    ],
+    "frameworks": "Frameworks",
+    "frameworks_items": [
+        "React",
+        "Next.js",
+        "Flask",
+        "Django",
+        "Node.js"
+    ],
+    "databases": "Databases",
+    "databases_items": [
+        "MySQL",
+        "Oracle",
+        "PostgreSQL",
+        "MongoDB"
+    ],
+    "development_tools": "Development Tools",
+    "development_tools_items": [
+        "Git",
+        "Maven",
+        "Docker",
+        "Kubernetes",
+        "Vercel",
+        "Render"
+    ],
+    "environments": "Environments",
+    "environments_items": [
+        "Windows",
+        "Linux (Ubuntu)"
+    ],
+    "soft_skills_items": [
+        "Collaborative Mindset",
+        "Adaptability",
+        "Analytical Problem Solving",
+        "Communication",
+        "Proactive Autonomy"
+    ],
+    "languages": "Languages",
+    "remote_work_skills": "Remote Work Skills",
+    "remote_skills": [
+        {
+            "title": "Remote Work Experience",
+            "description": "Comfortable working in a Scrum environment with daily standups and sprints."
+        },
+        {
+            "title": "Distributed Teams",
+            "description": "Collaborated with international teams across multiple time zones and cultures."
+        },
+        {
+            "title": "Collaboration Tools",
+            "description": "Proficient in Teams, Zoom, Jira, Trello, Notion, GitHub and other PM tools."
+        },
+        {
+            "title": "Asynchronous Communication",
+            "description": "Skilled in writing clear documentation and communicating progress async."
+        },
+        {
+            "title": "Self-Discipline",
+            "description": "Highly autonomous with strong time-management skills in remote settings."
+        },
+        {
+            "title": "Technical Setup",
+            "description": "Experienced in maintaining a reliable home office with the tools and environment necessary for productive remote work."
+        }
+    ],
+    "visit_project": "Visit Project",
+    "projects": [
+        {
+            "title": "Creative Portfolio",
+            "subtitle": "UI/UX & Visual Design",
+            "description": "A portfolio site crafted for a visual designer to showcase their work in branding, animation, and 3D design.\n\nBuilt with React.",
+            "image": "/Img/KatPortfolio.png",
+            "link": "https://www.ekaterinapotapova.design/"
+        },
+        {
+            "title": "Harmonessens",
+            "subtitle": "Wellness & Appointments",
+            "description": "A calming and elegant website for a health practitioner. Users can learn about services and book personalized appointments through a fully custom-built scheduling system.\n\nBuilt with React.ts and a MySQL backend.",
+            "image": "/Img/HarmonessensBG.png",
+            "link": "https://harmonessens.fr/"
+        },
+        {
+            "title": "Chroma Lab",
+            "subtitle": "Video game development",
+            "description": "A multiplayer puzzle game featuring various challenges and rooms to explore. Designed for cooperative play, it requires players to solve puzzles together to progress and escape the laboratory.\n\nDeveloped by a team of two, alongside a game designer.",
+            "image": "/Img/chromaLab.png",
+            "link": "https://youtu.be/_w22oAPhTj4?si=PFqoWTtNBS1sTuTK"
+        }
+    ],
+    "interests_title": "Personal Interests",
+    "interests_subtitle": "When I’m not coding, here’s what lights me up.",
+    "interest_para1": "What truly <span class='italic'>fascinates</span> me about computer science is understanding <strong>how things work at their core.</strong>",
+    "interest_para2": "From a young age, I've been captivated by the process of discovering how systems, software, and algorithms come together and how we can use them to do as we please. <strong>It's not just about learning to code, it's about unraveling and mastering the logic behind the tools we use every day and how they shape our world.</strong> This curiosity fuels my desire to not only keep learning but also to bring my growing skills and knowledge into the teams I work with.",
+    "interest_para3": "I'm passionate about applying what I know, collaborating with others, and using technology to create meaningful solutions.",
+    "contact_title": "Contact Me",
+    "contact_email": "Email",
+    "contact_phone": "Phone",
+    "interest_1_title": "Fitness",
+    "interest_1_description": "I hit the gym regularly, it keeps my head clear and trains my discipline.",
+    "interest_2_title": "Drawing & Art",
+    "interest_2_description": "Art has always been a lasting passion of mine. I love sketching and creating things.",
+    "interest_3_title": "Music",
+    "interest_3_description": "I love listening to my favorite artists like IDKHow, Saint Motel or Glass Animals.",
+    "interest_4_title": "Video Games & Game Dev",
+    "interest_4_description": "I really enjoy playing video games, and even make some in my spare time.",
+    "interest_5_title": "Drone Photography",
+    "interest_5_description": "Flying my drone and capturing the world from above feels very liberating. I dream of taking it on a journey around the globe."
+}

@@ -1,15 +1,18 @@
 "use client";
 
 import CapsuleText from "./Ui/CapsuleText/CapsuleText";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+	const { t } = useTranslation();
+
 	const items = [
 		{
-			text: "Email",
+			text: t("contact_email"),
 			onClick: () => window.location.href = "mailto:shems.asfouri@gmail.com"
 		},
 		{
-			text: "Phone",
+			text: t("contact_phone"),
 			onClick: () => window.location.href = "tel:+33750826423"
 		},
 		{
@@ -22,16 +25,16 @@ export default function Contact() {
 		}
 	];
 
-
 	return (
-		<footer className="mt-auto bg-cover bg-center p-10"
-			style={{
-				backgroundImage:
-					"url('Img/Footer.png')",
-			}}
-			id="Contact">
+		<footer
+			className="mt-auto bg-cover bg-center p-10"
+			style={{ backgroundImage: "url('Img/Footer.png')" }}
+			id="Contact"
+		>
 			<div className="w-5/6 lg:w-4/5 mx-auto flex flex-col justify-around gap-3 lg:gap-10 z-10">
-				<h2 className="text-[clamp(2rem,5vw,3rem)] font-light font-unbound whitespace-nowrap">Contact Me</h2>
+				<h2 className="text-[clamp(2rem,5vw,3rem)] font-light font-unbound whitespace-nowrap">
+					{t("contact_title")}
+				</h2>
 				<div className="flex flex-wrap gap-4">
 					{items.map((item, index) => (
 						<button

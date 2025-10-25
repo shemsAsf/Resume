@@ -1,0 +1,169 @@
+{
+    "role": "Développeur Full Stack | Ingénieur Logiciel",
+    "and_more": "Et bien d'autres",
+    "intro": "Bonjour, je suis un développeur passionné par la compréhension, la création et l'amélioration de logiciels. Ensemble, créons quelque chose d'extraordinaire !",
+    "home": "Accueil",
+    "about": "À propos",
+    "resume": "Parcours",
+    "skills": "Compétences",
+    "projects_title": "Projets",
+    "interest": "Loisirs",
+    "contact": "Contact",
+    "download_cv": "Télécharger CV",
+    "about_me": "À propos de moi",
+    "my_line_of_work": "Mon métier",
+    "my_photo_alt": "Photo de profil",
+    "about_paragraph_1": {
+        "part1": "Je suis un développeur passionné et créatif, guidé par",
+        "part2": "l'architecture propre, la scalabilité et la maintenabilité.",
+        "part3": "J'aime concevoir",
+        "part4": "des systèmes soignées, créer des expériences utilisateur agréables et produir des projets",
+        "part5": "faciles à maintenir et à faire évoluer en équipe."
+    },
+    "about_paragraph_2": {
+        "part1": "Qu'il s'agisse d'interfaces client ou de logique backend, je cherche toujours",
+        "part2": "la clarté, la réutilisabilité et la valeur à long terme",
+        "part3": "dans chacun de mes projets."
+    },
+    "my_resume": "Mon CV",
+    "professional_experience": "Expériences Professionnelles",
+    "education": "Formation",
+    "ivalua": {
+        "title": "IVALUA - MONTPELLIER",
+        "subtitle": "Alternance | 2023 (2 ans)",
+        "text": "Lors de mon alternance chez Ivalua, un des leader mondial des logiciels de gestion des achats et des dépenses dans le cloud, j'ai travaillé à l'amélioration d'un outil interne utilisé par l'équipe R&D. Mes contributions ont permis de fluidifier les workflows de développement et d'améliorer la productivité des équipes techniques."
+    },
+    "harmonessens": {
+        "title": "HARMONESSENS - SAINT GELY DU FESC",
+        "subtitle": "Freelance | 2024 (3 mois)",
+        "text": "J'ai développé un site web en React pour un naturopathe, incluant un système de réservation de rendez-vous sur mesure avec calendrier intégré."
+    },
+    "degriff": {
+        "title": "DEGRIFF PC - SAINT GELY DU FESC",
+        "subtitle": "Stage | 2021 (1 mois)",
+        "text": "Degriff PC est un magasin d'informatique local réputé pour son service personnalisé et son expertise en réparation. En plus de la vente de matériel informatique, ils disposent d'un atelier proposant des réparations d'appareils."
+    },
+    "epsi": {
+        "title": "EPSI - MONTPELLIER",
+        "subtitle": "Master | 2023 - 2025",
+        "text": "J'ai intégré EPSI en 2023 pour suivre un Mastère en Systèmes d'Information. Le programme se concentre principalement sur l'architecture logicielle, le DevOps et l'ingénierie des données."
+    },
+    "cmi": {
+        "title": "CMI - UNIVERSITÉ DES SCIENCES DE MONTPELLIER",
+        "subtitle": "Licence | 2020 - 2023",
+        "text": "J'ai effectué les trois premières années du CMI (Cursus Master en Ingénieurie) à l'Université des Sciences de Montpellier, obtenant une Licence dans le cadre du réseau sélectif FIGURE."
+    },
+    "web_programming": "Programmation Web",
+    "web_programming_items": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript"
+    ],
+    "frameworks": "Frameworks",
+    "frameworks_items": [
+        "React",
+        "Next.js",
+        "Flask",
+        "Django",
+        "Node.js"
+    ],
+    "databases": "Bases de données",
+    "databases_items": [
+        "MySQL",
+        "Oracle",
+        "PostgreSQL",
+        "MongoDB"
+    ],
+    "development_tools": "Outils de Développement",
+    "development_tools_items": [
+        "Git",
+        "Maven",
+        "Docker",
+        "Kubernetes",
+        "Vercel",
+        "Render"
+    ],
+    "environments": "Environnements",
+    "environments_items": [
+        "Windows",
+        "Linux (Ubuntu)"
+    ],
+    "soft_skills_items": [
+        "Esprit collaboratif",
+        "Adaptabilité",
+        "Résolution analytique de problèmes",
+        "Communication",
+        "Autonomie proactive"
+    ],
+    "languages": "Langages",
+    "remote_work_skills": "Compétences en Télétravail",
+    "remote_skills": [
+        {
+            "title": "Expérience en télétravail",
+            "description": "À l’aise pour travailler dans un environnement Scrum avec des daily standups et des sprints."
+        },
+        {
+            "title": "Équipes distribuées",
+            "description": "Collaboration avec des équipes internationales à travers différents fuseaux horaires et cultures."
+        },
+        {
+            "title": "Outils de collaboration",
+            "description": "Maîtrise de Teams, Zoom, Jira, Trello, Notion, GitHub et autres outils de gestion de projet."
+        },
+        {
+            "title": "Communication asynchrone",
+            "description": "Compétent pour rédiger une documentation claire et communiquer l’avancement de manière asynchrone."
+        },
+        {
+            "title": "Autodiscipline",
+            "description": "Très autonome avec de solides compétences en gestion du temps en contexte de télétravail."
+        },
+        {
+            "title": "Configuration technique",
+            "description": "Expérience dans le maintien d’un bureau à domicile fiable avec les outils et l’environnement nécessaires pour un travail à distance productif."
+        }
+    ],
+    "visit_project": "Visiter le projet",
+    "projects": [
+        {
+            "title": "Portfolio Créatif",
+            "subtitle": "UI/UX & Design Visuel",
+            "description": "Un site portfolio conçu pour un designer visuel afin de présenter son travail en branding, animation et design 3D.\n\nRéalisé avec React.",
+            "image": "/Img/KatPortfolio.png",
+            "link": "https://www.ekaterinapotapova.design/"
+        },
+        {
+            "title": "Harmonessens",
+            "subtitle": "Bien-être & Prise de Rendez-vous",
+            "description": "Un site apaisant et élégant pour un praticien de santé. Les utilisateurs peuvent découvrir les services et réserver des rendez-vous personnalisés grâce à un système de planning entièrement personnalisé.\n\nRéalisé avec React.ts et un backend MySQL.",
+            "image": "/Img/HarmonessensBG.png",
+            "link": "https://harmonessens.fr/"
+        },
+        {
+            "title": "Chroma Lab",
+            "subtitle": "Développement de jeu vidéo",
+            "description": "Un jeu multijoueur de type puzzle avec différents défis et salles à explorer. Conçu pour un jeu coopératif, il nécessite que les joueurs résolvent des énigmes ensemble pour progresser et s’échapper du laboratoire.\n\nDéveloppé par une équipe de deux, en collaboration avec un game designer.",
+            "image": "/Img/chromaLab.png",
+            "link": "https://youtu.be/_w22oAPhTj4?si=PFqoWTtNBS1sTuTK"
+        }
+    ],
+    "interests_title": "Centres d'intérêt",
+    "interests_subtitle": "Quand je ne code pas, voici ce qui me passionne.",
+    "interest_para1": "Ce qui me <span class='italic'>fascine</span> vraiment en informatique, c'est de comprendre <strong>comment les choses fonctionnent.</strong>",
+    "interest_para2": "Depuis mon plus jeune âge, je suis captivé par le fonctionnement des algorithmes et la créativité qu'offre la programmation. Coder n'est que le début : ce que je cherche c'est de <strong>comprendre et maîtriser la logique des outils que nous utilisons au quotidien.</strong> Cette curiosité nourrit mon envie d'apprendre et de contribuer aux équipes avec lesquelles je collabore.",
+    "interest_para3": "Je suis passionné par l'application de ce que je sais, la collaboration avec les autres et l'utilisation de la technologie pour créer des solutions porteuses de sens.",
+    "contact_title": "Me Contacter",
+    "contact_email": "Email",
+    "contact_phone": "Téléphone",
+    "interest_1_title": "Fitness",
+    "interest_1_description": "Je vais régulièrement à la salle de sport, ça m'aide à garder l'esprit clair et à renforcer ma discipline.",
+    "interest_2_title": "Art & Dessin",
+    "interest_2_description": "L'art a toujours été une passion durable pour moi. J'adore dessiner et créer.",
+    "interest_3_title": "Musique",
+    "interest_3_description": "J'adore écouter mes artistes préférés comme IDKHow, Saint Motel ou Glass Animals.",
+    "interest_4_title": "Jeux Vidéo & Game Dev",
+    "interest_4_description": "J'apprécie beaucoup jouer aux jeux vidéo et j'en crée même certains pendant mon temps libre.",
+    "interest_5_title": "Drone Photographie",
+    "interest_5_description": "Piloter mon drone et capturer le monde d'en haut est extrêmement libérateur. Je rêve de l'emmener en voyage autour du globe."
+}

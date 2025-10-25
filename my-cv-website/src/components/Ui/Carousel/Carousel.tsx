@@ -1,8 +1,11 @@
+"use client";
+
 import { useEffect, useState, useRef } from "react";
 import { motion, MotionValue, PanInfo, useMotionValue, useTransform } from "framer-motion";
 import React, { JSX } from "react";
-
+import { useTranslation } from "react-i18next";
 import { Dumbbell, Paintbrush, Music, Gamepad2, Camera } from "lucide-react";
+
 export interface CarouselItem {
   title: string;
   description: string;
@@ -19,39 +22,6 @@ export interface CarouselProps {
   loop?: boolean;
   round?: boolean;
 }
-
-const DEFAULT_ITEMS: CarouselItem[] = [
-  {
-    id: 1,
-    title: "Fitness",
-    description: "I hit the gym regularly — it keeps my head clear and trains my discipline.",
-    icon: <Dumbbell className="h-[16px] w-[16px] text-white" />,
-  },
-  {
-    id: 2,
-    title: "Drawing & Art",
-    description: "Art has always been a lasting passion of mine. I love sketching and creating things.",
-    icon: <Paintbrush className="h-[16px] w-[16px] text-white" />,
-  },
-  {
-    id: 3,
-    title: "Music",
-    description: "I love listening to my favorite artists like IDKHow, Saint Motel or Glass Animals.",
-    icon: <Music className="h-[16px] w-[16px] text-white" />,
-  },
-  {
-    id: 4,
-    title: "Video Games & Game Dev",
-    description: "I really enjoy playing video games, and even make some in my spare time.",
-    icon: <Gamepad2 className="h-[16px] w-[16px] text-white" />,
-  },
-  {
-    id: 5,
-    title: "Drone Photography",
-    description: "Flying my drone and capturing the world from above feels very liberating. I dream of taking it on a journey around the globe.",
-    icon: <Camera className="h-[16px] w-[16px] text-white" />,
-  },
-];
 
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
@@ -79,7 +49,7 @@ function useRotateTransforms(
 /* eslint-enable react-hooks/rules-of-hooks */
 
 export default function Carousel({
-  items = DEFAULT_ITEMS,
+  items,
   baseWidth = 300,
   autoplay = true,
   autoplayDelay = 3000,
@@ -87,6 +57,42 @@ export default function Carousel({
   loop = true,
   round = false,
 }: CarouselProps): JSX.Element {
+  const { t } = useTranslation();
+
+  const DEFAULT_ITEMS: CarouselItem[] = [
+    {
+      id: 1,
+      title: t("interest_1_title"),
+      description: t("interest_1_description"),
+      icon: <Dumbbell className="h-[16px] w-[16px] text-white" />,
+    },
+    {
+      id: 2,
+      title: t("interest_2_title"),
+      description: t("interest_2_description"),
+      icon: <Paintbrush className="h-[16px] w-[16px] text-white" />,
+    },
+    {
+      id: 3,
+      title: t("interest_3_title"),
+      description: t("interest_3_description"),
+      icon: <Music className="h-[16px] w-[16px] text-white" />,
+    },
+    {
+      id: 4,
+      title: t("interest_4_title"),
+      description: t("interest_4_description"),
+      icon: <Gamepad2 className="h-[16px] w-[16px] text-white" />,
+    },
+    {
+      id: 5,
+      title: t("interest_5_title"),
+      description: t("interest_5_description"),
+      icon: <Camera className="h-[16px] w-[16px] text-white" />,
+    },
+  ];
+
+  items = items || DEFAULT_ITEMS;
   const containerPadding = 16;
   const itemWidth = baseWidth - containerPadding * 2;
   const trackItemOffset = itemWidth + GAP;

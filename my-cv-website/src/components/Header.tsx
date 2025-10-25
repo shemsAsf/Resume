@@ -2,20 +2,23 @@
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "../../i18n";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const cvPath = "/CV_Shems_Asfouri.pdf";
+    const { t, i18n } = useTranslation();
+    const cvPath = `/CV_Shems_Asfouri_${i18n.language}.pdf`;
 
     const menuItems = [
-        { name: "Home", href: "#home", type: "scroll" },
-        { name: "About", href: "#AboutMe", type: "scroll" },
-        { name: "Resume", href: "#Resume", type: "scroll" },
-        { name: "Skills", href: "#Skills", type: "scroll" },
-        { name: "Projects", href: "#Projects", type: "scroll" },
-        { name: "Interest", href: "#Interest", type: "scroll" },
-        { name: "Contact ", href: "#Contact ", type: "scroll" },
-        { name: "Download CV", href: cvPath, type: "download" },
+        { name: t("home"), href: "#home", type: "scroll" },
+        { name: t("about"), href: "#AboutMe", type: "scroll" },
+        { name: t("resume"), href: "#Resume", type: "scroll" },
+        { name: t("skills"), href: "#Skills", type: "scroll" },
+        { name: t("projects_title"), href: "#Projects", type: "scroll" },
+        { name: t("interest"), href: "#Interest", type: "scroll" },
+        { name: t("contact"), href: "#Contact", type: "scroll" },
+        { name: t("download_cv"), href: cvPath, type: "download" },
     ];
 
     const handleClick = (item: typeof menuItems[number]) => {
@@ -32,13 +35,33 @@ export default function Header() {
         <header className="fixed top-0 left-0 w-full z-50 bg-transparent h-[10vh]">
             <div className="flex justify-between items-center px-4 sm:px-10 md:px-20 h-full bg-zinc-900">
                 <div className="text-[clamp(1rem,4vw,1.5rem)] font-bold">SHEMS ASFOURI</div>
+
                 <div className="flex justify-center items-center gap-2 sm:gap-4 lg:gap-6">
+                    <div className="flex items-center gap-2 sm:gap-4">
+                        {i18n.language === "en" && (
+                            <button
+                                onClick={() => i18n.changeLanguage("fr")}
+                                className="px-2 py-1 border border-white rounded hover:bg-white hover:text-black transition"
+                            >
+                                FR
+                            </button>
+                        )}
+                        {i18n.language === "fr" && (
+                            <button
+                                onClick={() => i18n.changeLanguage("en")}
+                                className="px-2 py-1 border border-white rounded hover:bg-white hover:text-black transition"
+                            >
+                                EN
+                            </button>
+                        )}
+                    </div>
+
                     <a
                         className="text-[clamp(1rem,4vw,1.5rem)]"
                         href={cvPath}
                         download
                     >
-                        <span className="hidden sm:inline">Download CV</span>
+                        <span className="hidden sm:inline">{t("download_cv")}</span>
                         <span className="inline sm:hidden">CV</span>
                     </a>
                     <button onClick={() => setMenuOpen(!menuOpen)} className="p-2">
