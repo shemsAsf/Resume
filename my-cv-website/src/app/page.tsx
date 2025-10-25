@@ -1,7 +1,6 @@
 "use client";
 
 import "../../i18n";
-import { useTranslation } from "react-i18next";
 import MenuHeader from "@/components/MenuHeader";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
@@ -14,7 +13,6 @@ import Resume from "@/components/Resume";
 import SectionWrapper from "@/components/Ui/ScrollSection";
 
 export default function Home() {
-    const { t, i18n } = useTranslation();
     return (
         <div className="relative bg-zinc-900 font-helvetica-neue text-white">
             <ClickSpark>
